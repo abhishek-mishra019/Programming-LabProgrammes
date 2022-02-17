@@ -1,9 +1,9 @@
 /* Write factorial function & use the function to find the sum of series S=1!+2!+ n!.  */
 #include <stdio.h>
 long long int fact(int num){
-    long long factorial=1;
-    while(num>=1){
-        factorial*=num;
+    long long factorial=num;
+    while(num>1){
+        factorial*=num-1;
          num-=1;
     }
     return factorial;

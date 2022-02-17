@@ -3,9 +3,9 @@
 #include <math.h>
 
 long long int fact(int num){       //making a seperate function for calculationg factorial
-    long long factorial=1;
-    while(num>=1){
-        factorial*=num;
+    long long factorial=num;
+    while(num>1){
+        factorial*=num-1;
          num-=1;
     }
     return factorial;

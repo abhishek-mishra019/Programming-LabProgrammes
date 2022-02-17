@@ -1,10 +1,10 @@
 /*Write a program to calculate the factorial for given number using function. */
 #include <stdio.h>
 long long int fact(long long int n){
-    long long int factorial=1;
-    while (n>=1)
+    long long int factorial=n;
+    while (n>1)
     {
-        factorial*=n;
+        factorial*=n-1;
         n-=1;
     }
     return factorial;

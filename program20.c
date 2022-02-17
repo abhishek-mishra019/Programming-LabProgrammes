@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 long long int factRec(int n){
-    if (n>=1)
-    {
-        return n*factRec(n-1);
+    if (n==1)
+    {   
+        return 1;
+      
     }
     else{
-    return 1;
+        return n*factRec(n-1);
     }
 }
 void main(){
